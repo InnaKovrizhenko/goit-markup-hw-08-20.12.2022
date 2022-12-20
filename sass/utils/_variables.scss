@@ -1,0 +1,13 @@
+$colors: (
+    'primery' : #757575,
+    'title' : #212121,
+    'accent' : #2196F3,
+    'background' : #FFFFFF,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+  }
+
+  $main-font: 'Roboto', sans-serif;
+  $secondary-font: 'Raleway', sans-serif;

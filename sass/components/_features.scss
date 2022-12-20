@@ -1,0 +1,95 @@
+/* секція особливості */
+
+.section-features {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+        &__list {
+            display: block;
+        }
+        &__item {
+            margin: 15px 0px;
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        &__text {
+            color: getColor('primery');
+            font-size: 14px;
+            line-height: 1.71;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        &__tumb {
+            height: 120px;
+            background-color: #F5F4FA;
+            border-radius: 4px;
+            text-align: center;
+            padding: 25px 100px;
+            margin-bottom: 30px;
+        }
+        &__icon {
+            margin-bottom: 30px;
+        }
+    
+    @include media-min(tablet){
+        padding-top: 60px;
+        padding-bottom: 60px;
+        width: 100%;
+
+            &__list {
+                display: flex;
+                flex-wrap: wrap;
+                flex-basis: 50%;
+                margin: -15px;
+                padding: 0;
+            }
+            &__item {
+                width: calc((100% - 4 * 15px) / 2);
+                margin: 15px;
+            }
+            &__title {
+                text-align: left;
+            }
+            &__text {
+                text-align: left;
+            }
+            &__tumb {
+                width: 100%;
+            }
+    }
+        
+    @include media-min(desktop){
+        padding-top: 94px;
+        padding-bottom: 94px;
+        width: auto;
+    
+            &__list {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                padding: 0;
+            }
+            &__item {
+                width: 270px;
+            }
+            &__title {
+                text-align: left;
+            }
+            &__text {
+                text-align: left;
+            }
+            &__tumb {
+                width: 270px;
+            }
+    }
+}
+
